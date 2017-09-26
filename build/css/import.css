@@ -53,7 +53,6 @@ body {
 .dropdown-content a:hover {
   background: #32EED1; }
 
-/*@import 'logga'; */
 .box {
   height: 150px;
   position: relative;
@@ -79,4 +78,4 @@ h1 {
     position: absolute;
     left: -20%;
     top: 20%;
-    background: white; }
+    background: #534D41; }
