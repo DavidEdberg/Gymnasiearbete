@@ -1,0 +1,34 @@
+
+
+.box {
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    width: 700px;
+    align-items: center;
+}
+
+.logga {
+    width: 5rem;
+    height: 5rem;
+    top: 25%;
+    //left: 25%;
+    //position: absolute;
+    background: black; //Ska vara variabel
+    transform: rotate(45deg);
+    margin: 0  40px  0 0;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -20%;
+        top: 20%;
+        background: white; //Ska vara variabel
+    }
+}
