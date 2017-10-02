@@ -9,14 +9,17 @@
 }
 
 .navlink{
-    background: #27AE99;
+    background: $navbar_background;
     float: left;
     width: 25%;
     height: 100%;
     line-height: 50px;
     text-align: center;
     border-right: 2px solid black;
+}
 
+.navlink:last-of-type {
+    border-right: none;
 }
 
 .navlink a{
