@@ -14,8 +14,9 @@ $num: 1;
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 50%));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 50%));
     grid-auto-rows: minmax(auto-fill, 50%);
+
 }
 
 
