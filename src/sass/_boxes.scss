@@ -1,0 +1,22 @@
+
+$num: 1;
+
+@each $color in $grid_colors {
+    .box#{$num} {
+        background-color: nth($grid_colors, 2);
+        color: nth($grid_colors, 1);
+        padding: 1  rem 1rem 0rem 1rem;
+    }
+
+    $num: $num + 1;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 50%));
+    grid-auto-rows: minmax(auto-fill, 50%);
+}
+
+
+
