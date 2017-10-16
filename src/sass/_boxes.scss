@@ -5,7 +5,7 @@ $num: 1;
     .box#{$num} {
         background-color: nth($grid_colors, 2);
         color: nth($grid_colors, 1);
-        padding: 1  rem 1rem 0rem 1rem;
+        padding: 1rem 1rem 0rem 1rem;
     }
 
     $num: $num + 1;
@@ -14,10 +14,17 @@ $num: 1;
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 50%));
-    grid-auto-rows: minmax(auto-fill, 50%);
+    grid-template-columns: 50%;
+    grid-template-areas: 
+    'box1 box2';
 
 }
 
+.box1 {
+    grid-area: box1;
+}
 
+.box2 {
+    grid-area: box2;
+}
 

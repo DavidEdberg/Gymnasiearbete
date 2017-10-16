@@ -99,14 +99,25 @@ h1 {
 .box1 {
   background-color: #fff;
   color: #000;
-  padding: 1  rem 1rem 0rem 1rem; }
+  padding: 1rem 1rem 0rem 1rem; }
 
 .box2 {
   background-color: #fff;
   color: #000;
-  padding: 1  rem 1rem 0rem 1rem; }
+  padding: 1rem 1rem 0rem 1rem; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 50%));
-  grid-auto-rows: minmax(auto-fill, 50%); }
+  grid-template-columns: 50%;
+  grid-template-areas: 'box1 box2'; }
+
+.box1 {
+  grid-area: box1; }
+
+.box2 {
+  grid-area: box2; }
+
+@media only screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-areas: 'box1' 'box2'; } }
