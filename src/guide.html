@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+
     <div class="box">
         <div class="logga"></div>
         <h1 class="logotyp">My Document</h1>
@@ -38,9 +38,9 @@
     </ul>
 
     <h1>Förord</h1>
-    När man beställer datordelar är det viktigaste att alla delar är kompatibla med varandra så inga problem uppstår.
-    Det går till exempel inte att installera en processor från Intel i ett AMD baserat moderkort, DDR3 minnen i en DDR4-sockel
-    osv. Så det är viktigt att kontrollera allt innan man beställer delarna. Det finns flera saker som kan vara bra att tänka
+    När man beställer datordelar är det viktigaste att alla delar är kompatibla med varandra så inga problem uppstår. Det går
+    till exempel inte att installera en processor från Intel i ett AMD baserat moderkort, DDR3 minnen i en DDR4-sockel osv.
+    Så det är viktigt att kontrollera allt innan man beställer delarna. Det finns flera saker som kan vara bra att tänka
     på när man bygger en dator. Att bygga en dator är något som tar lång och aldrig bör stressas. Det är viktigt att man
     undviker mattor pga. den statiska faktorn. Man bör även se till att man är jordad med hjälp utav ett ESD-armband. Andra
     saker som kan vara bra att tänka på är att bygga på en väl lyst plats. Det vi kan rekommendera är att först läsa igenom
@@ -48,8 +48,89 @@
     <p>En rekommendation är att man sätter ihop alla delar utanför chassit för att enkelt kunna se ifall allting funkar och
         det hjälper även med eventuell felsökning.</p>
 
+    <h1 id="komponenter">Steg Ett - Att välja rätt komponenter</h1>
+    När du börjar planera för att bygga en ny dator behöver du först lägga lite tid på att välja ut rätt komponenter. Här är
+    en enkel checklista på de komponenter du behöver för att bygga en fullt fungerande dator, men även några extra komponenter
+    som du kanske vill ta med när du ändå bygger en ny dator så att du slipper tänka på det senare.
+    <ul>
+        <li> Processor</li>
+        <li>Processorkylare (detta ingår oftast med processorn men du kanske vill ha en tystare och mer effektiv tredjeparts
+            kylare från en annan tillverkare)</li>
+        <li>Moderkort</li>
+        <li>Internminne (RAM)</li>
+        <li>Grafikkort (I vissa fall är "grafikkortet" redan integrerat på moderkortet eller i processorn)</li>
+        <li>Hårddisk</li>
+        <li>SSD</li>
+        <li>DVD-brännare eller Blu-ray</li>
+        <li>Chassi</li>
+        <li>Nätaggregat (I vissa fall ingår detta med chassit)</li>
+    </ul>
 
-    <footer class="copyright">Copyright &copy; My Document, 2017 </footer>
-</body>
+    <p></p>Förutom komponenterna ovan så finns det några delar som du kanske vill addera beroende på vad du ska använda din
+    nya dator till.</p>
+    <ul>
+        <li>Ljudkort (Ett enklare ljudkort är oftast integrerat på moderkortet)</li>
+        <li>Minneskortläsare</li>
+        <li>Extra fläktar för chassit (Chassifläkt)</li>
+    </ul>
+
+    <h1 id="processor">Steg Två - Montera processorn i moderkortet</h1>
+    <p>
+        Detta steg handlar helt och hållet om den fysiska monteringen av hårdvaran. Innan du gör något annat bör du montera processorn
+        på moderkortet. Att installera en processor är nästintill identiskt för alla andra moderna socklar för Intel-processorer.
+        För AMD-processorer är det lite annorlunda men vi kommer dit om en liten stund.
+    </p>
+    <p>
+        Först öppnar du sockeln genom att lossa på spaken och vrider den uppåt och sedan lossa på metallbygeln som är till för att
+        hålla processorn på plats. Sedan tar du bort plastskyddet som sitter över sockeln. OBS! Rör ej pinnarna i sockeln
+        då dessa är extremt ömtåliga och om du böjer någon av dem kan det hända att datorn inte fungerar. Placera sedan processorn
+        i sockeln, se till så att processorn är korrekt placerad och rättvänd. I dem flesta fall är det pilar på processorn
+        respektive moderkortet som som visar rätt håll. Stäng sedan bygeln och lås fast spaken.
+    </p>
+    <p>
+        När det kommer till processorer från AMD så sitter inte pinnarna i processorsockeln. De sitter på processorn och sockeln
+        består istället av många små hål. Installationen är då enklare. Fäll upp spaken på sockeln, placera processorn i
+        rätt läge genom att följa anvisningar på processor och sockel (se manualen för mer information), tryck till processorn
+        försiktigt så den "ramlar ner" i sockeln och fäll sedan ner spaken så att processorn låses fast.
+    </p>
+
+    <h1 id="internminne">Steg Tre - Montera internminnet (RAM)</h1>
+
+    <p>
+        Nu kan du börja installera internminnet. Detta är faktiskt väldigt enkelt, men du bör ta en titt i manualen för ditt moderkort
+        för att se exakt hur minnena ska monteras (i vilka portar). Vanligast för Intel-baserade system (förutsatt att du
+        har två minnen) är att montera minnena i port 2 och 4, räknat från processorsockeln sett. För AMD ska minnen i de
+        flesta fall monteras i port 1 och 2.</p>
+    <p>
+        Att installera internminne är ett av de enklaste sakerna med att bygga eller uppgradera sin dator. Först av allt ska du försäkra
+        dig om att du köpt rätt sorts minnen. (Anslutningsstiften på olika minnesstandarder ser olika ut rent fysiskt). När
+        detta är verifierat så lossar du spärrarna på respektive sida av minnessockeln. Detta gör du genom att vika ut spärrarna.
+        Ta sedan minnesmodulen ochplacera den åt rätt håll utefter avfasningen i minnet och piggen i minnessockeln. Minnet
+        passar bara åt ett håll. Tryck sedan ner minnet i sockeln tills dess att spärrarna på båda sidorna av sockeln klickar
+        till och låser fast minnet. Om moderkortet är nytt kan du behöva trycka till lite extra, men tänk på att vara helt
+        säker på att du vänt minnet åt rätt håll så att du inte skadar minnesmodulen eller sockeln.
+    </p>
+
+    <h1 id="processorkylare">Steg Fyra - Montera processorkylaren</h1>
+    <p>
+        Nu när processorn är monterad i sockeln är det dags att montera processorkylaren. Exakt hur den ska monteras kan variera
+        från modell till modell, men det finns tydligt beskrivet i manualen för kylaren (eller processorn om du använder
+        den medföljande processorkylaren). Vid installation av tredjepartskylare så följ manualen för din specifika processorkylare.
+    </p>
+    <p>
+        Vi tänker i denna guide förutse att vi använder oss utav en kylare som medföljer processorn. Först av allt så är det viktigt
+        att det finns ett tunt, tunt lager av kylpasta mellan processorn och processorkylaren. Man brukar annars säga att
+        ungefär en ärta av kylpasta räcker för dem flesta processorerna.
+    </p>
+    <p>
+        Själva kylaren har fyra ben. Sätt försiktigt kylaren över sockeln så att benen matchar med hålen i moderkortet åt rätt håll.
+        Tryck sedan ner kylaren mot moderkortet så att hullingarna på benens ändar fäster på baksidan av moderkortet. Kontrollera
+        så alla hullingar har gått igenom hålen och tryck sedan ner de svarta plastbitarna i toppen av varje ben så att kylarens
+        ben fixeras i hålen. Anslut sedan strömkabeln från processorkylaren till avsedd kontakt på moderkortet. Vilken kontakt
+        det är står angivet i manualen för moderkortet men oftast sitter kontakten nära processorsockeln och benämns "CPU_FAN".
+        När du är klar med steg fyra så är det dags att montera moderkortet i chassit.
+        <p/>
+        <footer class="copyright">Copyright &copy; My Document, 2017 </footer>
+
 
 </html>
