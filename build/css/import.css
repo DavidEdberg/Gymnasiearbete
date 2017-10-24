@@ -50,13 +50,20 @@ body {
   z-index: 1; }
 
 .navlink:hover > .dropdown-content {
-  display: block;
-  width: 25%; }
+  display: grid;
+  width: 100%;
+  left: 0%;
+  grid-template-columns: repeat(4, 25%); }
 
 .dropdown-content a:hover {
   background: #507b77; }
 
+.dropdown-content:first-of-type {
+  display: none; }
+
 .box {
+  height: 12vw;
+  min-height: 150px;
   width: 100%;
   position: relative;
   display: flex;
@@ -129,3 +136,7 @@ body {
   .grid {
     grid-template-columns: 100%;
     grid-template-areas: 'box1' 'box2'; } }
+
+@media only screen and (max-width: 400px) {
+  .box {
+    min-height: 100px; } }

@@ -41,12 +41,19 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .navlink:hover > .dropdown-content {
-    display: block;
-    width: 25%;
+    display: grid;
+    width: 100%;
+    left: 0%;
+    grid-template-columns: repeat(4, 25%);
 }
 
 .dropdown-content a:hover{
     background: $navbar_hover;
 
+}
+
+.dropdown-content:first-of-type {
+    display: none;
 }
