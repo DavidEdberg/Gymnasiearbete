@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/import.css">
     <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    <script src="java/navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -33,7 +34,7 @@
 
     <ul class="navbar">
         <li class="navlink"><a href="hemsida.html">Hemsida</a></li>
-        <li class="navlink"><a href="guide.html">Guide</a>
+        <li class="navlink"><a href="guide.html" onclick="toggleDropDown()">Guide</a>
             <div class="dropdown-content">
             <a href="guide.html#komponenter">Komponenter</a>
             <a href="guide.html#processor">Processorn</a>
@@ -72,6 +73,16 @@
 
         <div class="box2">box 2</div>
     </div>
+
+    <script>
+    function toggleDropDown() {
+        var x = document.getElementById("dropdown-content").style.maxWidth = "700px";
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }</script>
 
     <footer class="copyright">Copyright &copy; My Document, 2017 </footer>
 </body>
