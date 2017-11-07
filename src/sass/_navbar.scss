@@ -26,7 +26,7 @@
     display: block;
     height: 100%;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navlink:hover{
@@ -43,11 +43,17 @@
 }
 
 .navlink:hover > .dropdown-content {
-    display: block;
-    width: 25%;
+    display: grid;
+    width: 100%;
+    left: 0%;
+    grid-template-columns: repeat(4, 25%);
 }
 
 .dropdown-content a:hover{
     background: $navbar_hover;
 
+}
+
+.dropdown-content:first-of-type {
+    display: none;
 }

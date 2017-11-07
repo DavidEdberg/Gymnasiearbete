@@ -34,24 +34,24 @@
 </div>
 
 <ul class="navbar">
-    <li class="navlink">
-        <a href="hemsida.html">Hemsida</a>
+    <li class="navlink"><a href="hemsida.html">Hemsida</a></li>
+    <li class="navlink"><a href="guide.html">Guide</a>
+        <div class="dropdown-content">
+        <a href="guide.html#komponenter">Komponenter</a>
+        <a href="guide.html#processor">Processorn</a>
+        <a href="guide.html#ram">Internminne</a>
+        <a href="guide.html#processorkylare">Processorkylare</a>
+        <a href="guide.html#chassikontakter">Chassikontakter</a>
+        <a href="guide.html#hårddisk">Hårddisk</a>
+        <a href="guide.html#grafikkort">Grafikkort</a>
+        <a href="guide.html#nätaggregat">Nätaggregat</a>
+        <a href="guide.html#expansionskort">Expansionskort</a>
+        <a href="guide.html#kabeldragning">Kabeldragning</a>
+        </div>  
+
     </li>
-    <li class="navlink">
-        <a href="guide.html">Guide
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </a>
-    </li>
-    <li class="navlink">
-        <a href="om_oss.html">Om Oss</a>
-    </li>
-    <li class="navlink">
-        <a href="kontakt.html">Kontakt</a>
-    </li>
+    <li class="navlink"><a href="om_oss.html">Om Oss</a></li>
+    <li class="navlink"><a href="kontakt.html">Kontakt</a></li>
 </ul>
 
 <h1>Förord</h1>
@@ -67,10 +67,15 @@ följa guiden under bygget.
     hjälper även med eventuell felsökning.
 </p>
 
-<h1 id="komponenter">Steg Ett - Att välja rätt komponenter</h1> När du börjar planera för att bygga en ny dator behöver du först lägga lite tid
+<h1 id="komponenter">Steg Ett - Att välja rätt komponenter</h1> 
+
+<p>
+När du börjar planera för att bygga en ny dator behöver du först lägga lite tid
 på att välja ut rätt komponenter. Här är en enkel checklista på de komponenter du behöver för att bygga en fullt fungerande
 dator, men även några extra komponenter som du kanske vill ta med när du ändå bygger en ny dator så att du slipper tänka
 på det senare.
+</p>
+
 <ul>
     <li> Processor</li>
     <li>Processorkylare (detta ingår oftast med processorn men du kanske vill ha en tystare och mer effektiv tredjeparts kylare
@@ -85,8 +90,10 @@ på det senare.
     <li>Nätaggregat (I vissa fall ingår detta med chassit)</li>
 </ul>
 
-<p></p>Förutom komponenterna ovan så finns det några delar som du kanske vill addera beroende på vad du ska använda din nya
-dator till.</p>
+<p>
+    Förutom komponenterna ovan så finns det några delar som du kanske vill addera beroende på vad du ska använda din nya
+    dator till.
+</p>
 <ul>
     <li>Ljudkort (Ett enklare ljudkort är oftast integrerat på moderkortet)</li>
     <li>Minneskortläsare</li>
@@ -119,7 +126,8 @@ dator till.</p>
     Nu kan du börja installera internminnet. Detta är faktiskt väldigt enkelt, men du bör ta en titt i manualen för ditt moderkort
     för att se exakt hur minnena ska monteras (i vilka portar). Vanligast för Intel-baserade system (förutsatt att du har
     två minnen) är att montera minnena i port 2 och 4, räknat från processorsockeln sett. För AMD ska minnen i de flesta
-    fall monteras i port 1 och 2.</p>
+    fall monteras i port 1 och 2.
+</p>
 <p>
     Att installera internminne är ett av de enklaste sakerna med att bygga eller uppgradera sin dator. Först av allt ska du försäkra
     dig om att du köpt rätt sorts minnen. (Anslutningsstiften på olika minnesstandarder ser olika ut rent fysiskt). När detta
@@ -177,19 +185,31 @@ dator till.</p>
     installera nätaggregatet först klicka här.
 </p>
 
+<<<<<<< HEAD
+<h1>Steg Sex - Anslut chassikontakterna</h1>
+<p>
+    I chassit har du nu en del kablar som behöver anslutas till moderkortet. Dessa kablar ansluter bland annat USB-portar, fläktar,
+=======
 <h1 id="chassikontaker">Steg Sex - Anslut chassikontakterna</h1>
 <p>I chassit har du nu en del kablar som behöver anslutas till moderkortet. Dessa kablar ansluter bland annat USB-portar, fläktar,
+>>>>>>> a80ea57a2087172bb39003d5479fb80f79250ceb
     ljudkontakter, lysdioder och strömbrytare med mera. I manualen för ditt moderkort står det precis var alla kontakter
-    ska anslutas.</p>
-<p>Notera att du kan montera kontakterna för lysdioder ("LED"), strömbrytare och resetknapp åt olika håll utan att något tar
+    ska anslutas.
+</p>
+
+<p>
+    Notera att du kan montera kontakterna för lysdioder ("LED"), strömbrytare och resetknapp åt olika håll utan att något tar
     skada men att det kanske inte fungerar. För att undvika onödigt huvudbry så benämns de färgade kablarna till varje kontakt
-    som "+" i manualen för moderkortet och när man vet detta så bör det göra monteringen enklare.</p>
+    som "+" i manualen för moderkortet och när man vet detta så bör det göra monteringen enklare.
+</p>
+
 <p>I ditt chassi bör du hitta följande kontakter:</p>
+
 <ul>
     <li>Kabel till USB-portarna i fronten på chassit. (Dessa är kvadratiska och saknar ett anslutningshål i kontakten.)</li>
     <li>Resetknappen (RST_SW)</li>
     <li>Strömbrytaren (PWR_SW)</li>
-    <li>Lysdioder för ström och hårddiskaktivitet. (HDD_LED & PWR_LED)</li>
+    <li>Lysdioder för ström och hårddiskaktivitet. (HDD_LED &amp; PWR_LED)</li>
     <li>Kontakten för eSATA som ansluts till valfri SATA-port på moderkortet. (Försök att undvika port 1 och 2 då dessa bör användas
         för hårddisk och optisk läsare)</li>
     <li>Kontakterna för ljud ska anslutas till de interna ljudkontakterna. I majoriteten av fallen vill du använda kontakten
@@ -315,7 +335,7 @@ dator till.</p>
 
 
 
-<footer class="copyright">Copyright &copy; My Document, 2017 </footer>
+<footer class="copyright">Copyright &copy; My Documents, 2017 </footer>
 
 
 </html>

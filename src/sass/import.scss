@@ -34,3 +34,12 @@ body {
     }
     
 }
+
+@media only screen and (max-width: 400px) {
+    
+    .box {
+        min-height: 100px;
+    }
+    
+}
+
