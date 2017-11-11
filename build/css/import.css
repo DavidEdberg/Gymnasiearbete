@@ -27,7 +27,7 @@ body {
   height: 100%;
   line-height: 4vw;
   text-align: center;
-  border-right: 0.15vw solid black; }
+  border-right: 0.15vw solid #283d3b; }
 
 .navlink:last-of-type {
   border-right: none; }
