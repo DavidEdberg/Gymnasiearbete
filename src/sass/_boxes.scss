@@ -1,30 +1,59 @@
 
-$num: 1;
-
-@each $color in $grid_colors {
-    .box#{$num} {
-        background-color: nth($grid_colors, 2);
-        color: nth($grid_colors, 1);
-        padding: 1rem 1rem 0rem 1rem;
-    }
-
-    $num: $num + 1;
-
+.grid_guide {
+    background-color: white;
+    color: black;
+    display: grid;
+    
+    grid-template-columns: 50%;
+    grid-template-areas: 
+        'box1 box1'
+        'box2 box2'
+        'box3 box3'
+        'box4 box5'
+        'box6 box6'
+        'box7 box8'
+        'box9 box9'
+        'box10 box10'
+        'box11 box11'
+        'box12 box12'
+        'box13 box13'
+        'box14 box14'
+    ;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
-.grid {
+.box1_guide {grid-area: box1;}
+.box2_guide {grid-area: box2;}
+.box3_guide {grid-area: box3;}
+.box4_guide {grid-area: box4;}
+.box5_guide {grid-area: box5;}
+.box6_guide {grid-area: box6;}
+.box7_guide {grid-area: box7;}
+.box8_guide {grid-area: box8;}
+.box9_guide {grid-area: box9;}
+.box10_guide {grid-area: box10;}
+.box11_guide {grid-area: box11;}
+.box12_guide {grid-area: box12;}
+.box13_guide {grid-area: box13;}
+.box14_guide {grid-area: box14;}
+
+.grid_hemsida {
     display: grid;
+    background-color: white;
+    color: black;
+    padding: 1rem 1rem 0rem 1rem;    
+    
     grid-template-columns: 50%;
     grid-template-areas: 
     'box1 box2';
 
 }
 
-.box1 {
+.box1_hemsida {
     grid-area: box1;
 }
 
-.box2 {
+.box2_hemsida {
     grid-area: box2;
 }
 

@@ -55,274 +55,288 @@
 </ul>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Tillbaks till toppen</button>
 
-<h1 id="förord">Förord</h1>
-När man beställer datordelar är det viktigaste att alla delar är kompatibla med varandra så inga problem uppstår. Det går
-till exempel inte att installera en processor från Intel i ett AMD baserat moderkort, DDR3 minnen i en DDR4-sockel osv. Så
-det är viktigt att kontrollera allt innan man beställer delarna. Det finns flera saker som kan vara bra att tänka på när
-man bygger en dator. Att bygga en dator är något som tar lång och aldrig bör stressas. Det är viktigt att man undviker mattor
-pga. den statiska faktorn. Man bör även se till att man är jordad med hjälp utav ett ESD-armband. Andra saker som kan vara
-bra att tänka på är att bygga på en väl lyst plats. Det vi kan rekommendera är att först läsa igenom hela guiden därefter
-följa guiden under bygget.
-</p>
-<p>En rekommendation är att man sätter ihop alla delar utanför chassit för att enkelt kunna se ifall allting funkar och det
-    hjälper även med eventuell felsökning.
-</p>
+<div class="grid_guide">
 
-<h1 id="komponenter">Steg Ett - Att välja rätt komponenter</h1> 
+    <div class="box1_guide"><h1>Förord</h1>
+    <p>När man beställer datordelar är det viktigaste att alla delar är kompatibla med varandra så inga problem uppstår. Det går
+    till exempel inte att installera en processor från Intel i ett AMD baserat moderkort, DDR3 minnen i en DDR4-sockel osv. Så
+    det är viktigt att kontrollera allt innan man beställer delarna. Det finns flera saker som kan vara bra att tänka på när
+    man bygger en dator. Att bygga en dator är något som tar lång och aldrig bör stressas. Det är viktigt att man undviker mattor
+    pga. den statiska faktorn. Man bör även se till att man är jordad med hjälp utav ett ESD-armband. Andra saker som kan vara
+    bra att tänka på är att bygga på en väl lyst plats. Det vi kan rekommendera är att först läsa igenom hela guiden därefter
+    följa guiden under bygget.
+    </p>
+    <p>En rekommendation är att man sätter ihop alla delar utanför chassit för att enkelt kunna se ifall allting funkar och det
+        hjälper även med eventuell felsökning.
+    </p></div>
 
-<p>
-När du börjar planera för att bygga en ny dator behöver du först lägga lite tid
-på att välja ut rätt komponenter. Här är en enkel checklista på de komponenter du behöver för att bygga en fullt fungerande
-dator, men även några extra komponenter som du kanske vill ta med när du ändå bygger en ny dator så att du slipper tänka
-på det senare.
-</p>
+    <div class="box2_guide"><h1 id="komponenter">Steg Ett - Att välja rätt komponenter</h1> 
 
-<ul>
-    <li> Processor</li>
-    <li>Processorkylare (detta ingår oftast med processorn men du kanske vill ha en tystare och mer effektiv tredjeparts kylare
-        från en annan tillverkare)</li>
-    <li>Moderkort</li>
-    <li>Internminne (RAM)</li>
-    <li>Grafikkort (I vissa fall är "grafikkortet" redan integrerat på moderkortet eller i processorn)</li>
-    <li>Hårddisk</li>
-    <li>SSD</li>
-    <li>DVD-brännare eller Blu-ray</li>
-    <li>Chassi</li>
-    <li>Nätaggregat (I vissa fall ingår detta med chassit)</li>
-</ul>
+    <p>
+    När du börjar planera för att bygga en ny dator behöver du först lägga lite tid
+    på att välja ut rätt komponenter. Här är en enkel checklista på de komponenter du behöver för att bygga en fullt fungerande
+    dator, men även några extra komponenter som du kanske vill ta med när du ändå bygger en ny dator så att du slipper tänka
+    på det senare.
+    </p>
 
-<p>
-    Förutom komponenterna ovan så finns det några delar som du kanske vill addera beroende på vad du ska använda din nya
-    dator till.
-</p>
-<ul>
-    <li>Ljudkort (Ett enklare ljudkort är oftast integrerat på moderkortet)</li>
-    <li>Minneskortläsare</li>
-    <li>Extra fläktar för chassit (Chassifläkt)</li>
-</ul>
+    <ul>
+        <li> Processor</li>
+        <li>Processorkylare (detta ingår oftast med processorn men du kanske vill ha en tystare och mer effektiv tredjeparts kylare
+            från en annan tillverkare)</li>
+        <li>Moderkort</li>
+        <li>Internminne (RAM)</li>
+        <li>Grafikkort (I vissa fall är "grafikkortet" redan integrerat på moderkortet eller i processorn)</li>
+        <li>Hårddisk</li>
+        <li>SSD</li>
+        <li>DVD-brännare eller Blu-ray</li>
+        <li>Chassi</li>
+        <li>Nätaggregat (I vissa fall ingår detta med chassit)</li>
+    </ul>
 
-<h1 id="processor">Steg Två - Montera processorn i moderkortet</h1>
-<p>
-    Detta steg handlar helt och hållet om den fysiska monteringen av hårdvaran. Innan du gör något annat bör du montera processorn
-    på moderkortet. Att installera en processor är nästintill identiskt för alla andra moderna socklar för Intel-processorer.
-    För AMD-processorer är det lite annorlunda men vi kommer dit om en liten stund.
-</p>
-<p>
-    Först öppnar du sockeln genom att lossa på spaken och vrider den uppåt och sedan lossa på metallbygeln som är till för att
-    hålla processorn på plats. Sedan tar du bort plastskyddet som sitter över sockeln. OBS! Rör ej pinnarna i sockeln då
-    dessa är extremt ömtåliga och om du böjer någon av dem kan det hända att datorn inte fungerar. Placera sedan processorn
-    i sockeln, se till så att processorn är korrekt placerad och rättvänd. I dem flesta fall är det pilar på processorn respektive
-    moderkortet som som visar rätt håll. Stäng sedan bygeln och lås fast spaken.
-</p>
-<p>
-    När det kommer till processorer från AMD så sitter inte pinnarna i processorsockeln. De sitter på processorn och sockeln
-    består istället av många små hål. Installationen är då enklare. Fäll upp spaken på sockeln, placera processorn i rätt
-    läge genom att följa anvisningar på processor och sockel (se manualen för mer information), tryck till processorn försiktigt
-    så den "ramlar ner" i sockeln och fäll sedan ner spaken så att processorn låses fast.
-</p>
+    <p>
+        Förutom komponenterna ovan så finns det några delar som du kanske vill addera beroende på vad du ska använda din nya
+        dator till.
+    </p>
+    <ul>
+        <li>Ljudkort (Ett enklare ljudkort är oftast integrerat på moderkortet)</li>
+        <li>Minneskortläsare</li>
+        <li>Extra fläktar för chassit (Chassifläkt)</li>
+    </ul></div> 
 
-<h1 id="ram">Steg Tre - Montera internminnet (RAM)</h1>
+    <div class="box3_guide"><h1 id="processor">Steg Två - Montera processorn i moderkortet</h1>
 
-<p>
-    Nu kan du börja installera internminnet. Detta är faktiskt väldigt enkelt, men du bör ta en titt i manualen för ditt moderkort
-    för att se exakt hur minnena ska monteras (i vilka portar). Vanligast för Intel-baserade system (förutsatt att du har
-    två minnen) är att montera minnena i port 2 och 4, räknat från processorsockeln sett. För AMD ska minnen i de flesta
-    fall monteras i port 1 och 2.
-</p>
-<p>
-    Att installera internminne är ett av de enklaste sakerna med att bygga eller uppgradera sin dator. Först av allt ska du försäkra
-    dig om att du köpt rätt sorts minnen. (Anslutningsstiften på olika minnesstandarder ser olika ut rent fysiskt). När detta
-    är verifierat så lossar du spärrarna på respektive sida av minnessockeln. Detta gör du genom att vika ut spärrarna. Ta
-    sedan minnesmodulen ochplacera den åt rätt håll utefter avfasningen i minnet och piggen i minnessockeln. Minnet passar
-    bara åt ett håll. Tryck sedan ner minnet i sockeln tills dess att spärrarna på båda sidorna av sockeln klickar till och
-    låser fast minnet. Om moderkortet är nytt kan du behöva trycka till lite extra, men tänk på att vara helt säker på att
-    du vänt minnet åt rätt håll så att du inte skadar minnesmodulen eller sockeln.
-</p>
+    <p>
+        Detta steg handlar helt och hållet om den fysiska monteringen av hårdvaran. Innan du gör något annat bör du montera processorn
+        på moderkortet. Att installera en processor är nästintill identiskt för alla andra moderna socklar för Intel-processorer.
+        För AMD-processorer är det lite annorlunda men vi kommer dit om en liten stund.
+    </p>
+    <p>
+        Först öppnar du sockeln genom att lossa på spaken och vrider den uppåt och sedan lossa på metallbygeln som är till för att
+        hålla processorn på plats. Sedan tar du bort plastskyddet som sitter över sockeln. OBS! Rör ej pinnarna i sockeln då
+        dessa är extremt ömtåliga och om du böjer någon av dem kan det hända att datorn inte fungerar. Placera sedan processorn
+        i sockeln, se till så att processorn är korrekt placerad och rättvänd. I dem flesta fall är det pilar på processorn respektive
+        moderkortet som som visar rätt håll. Stäng sedan bygeln och lås fast spaken.
+    </p>
+    <p>
+        När det kommer till processorer från AMD så sitter inte pinnarna i processorsockeln. De sitter på processorn och sockeln
+        består istället av många små hål. Installationen är då enklare. Fäll upp spaken på sockeln, placera processorn i rätt
+        läge genom att följa anvisningar på processor och sockel (se manualen för mer information), tryck till processorn försiktigt
+        så den "ramlar ner" i sockeln och fäll sedan ner spaken så att processorn låses fast.
+    </p></div> 
+
+    <div class="box4_guide"><h1 id="ram">Steg Tre - Montera internminnet (RAM)</h1>
+
+    <p>
+        Nu kan du börja installera internminnet. Detta är faktiskt väldigt enkelt, men du bör ta en titt i manualen för ditt moderkort
+        för att se exakt hur minnena ska monteras (i vilka portar). Vanligast för Intel-baserade system (förutsatt att du har
+        två minnen) är att montera minnena i port 2 och 4, räknat från processorsockeln sett. För AMD ska minnen i de flesta
+        fall monteras i port 1 och 2.
+    </p>
+    <p>
+        Att installera internminne är ett av de enklaste sakerna med att bygga eller uppgradera sin dator. Först av allt ska du försäkra
+        dig om att du köpt rätt sorts minnen. (Anslutningsstiften på olika minnesstandarder ser olika ut rent fysiskt). När detta
+        är verifierat så lossar du spärrarna på respektive sida av minnessockeln. Detta gör du genom att vika ut spärrarna. Ta
+        sedan minnesmodulen ochplacera den åt rätt håll utefter avfasningen i minnet och piggen i minnessockeln. Minnet passar
+        bara åt ett håll. Tryck sedan ner minnet i sockeln tills dess att spärrarna på båda sidorna av sockeln klickar till och
+        låser fast minnet. Om moderkortet är nytt kan du behöva trycka till lite extra, men tänk på att vara helt säker på att
+        du vänt minnet åt rätt håll så att du inte skadar minnesmodulen eller sockeln.
+    </p></div> 
+
+    <div class="box5_guide"><img src="images/insert_ram.png" alt=""></div> 
+
+    <div class="box6_guide"><h1 id="processorkylare">Steg Fyra - Montera processorkylaren</h1>
+    <p>
+        Nu när processorn är monterad i sockeln är det dags att montera processorkylaren. Exakt hur den ska monteras kan variera
+        från modell till modell, men det finns tydligt beskrivet i manualen för kylaren (eller processorn om du använder den
+        medföljande processorkylaren). Vid installation av tredjepartskylare så följ manualen för din specifika processorkylare.
+    </p>
+    <p>
+        Vi tänker i denna guide förutse att vi använder oss utav en kylare som medföljer processorn. Först av allt så är det viktigt
+        att det finns ett tunt, tunt lager av kylpasta mellan processorn och processorkylaren. Man brukar annars säga att ungefär
+        en ärta av kylpasta räcker för dem flesta processorerna.
+    </p>
+    <p>
+        Själva kylaren har fyra ben. Sätt försiktigt kylaren över sockeln så att benen matchar med hålen i moderkortet åt rätt håll.
+        Tryck sedan ner kylaren mot moderkortet så att hullingarna på benens ändar fäster på baksidan av moderkortet. Kontrollera
+        så alla hullingar har gått igenom hålen och tryck sedan ner de svarta plastbitarna i toppen av varje ben så att kylarens
+        ben fixeras i hålen. Anslut sedan strömkabeln från processorkylaren till avsedd kontakt på moderkortet. Vilken kontakt
+        det är står angivet i manualen för moderkortet men oftast sitter kontakten nära processorsockeln och benämns "CPU_FAN".
+        När du är klar med steg fyra så är det dags att montera moderkortet i chassit.
+    </p></div> 
+
+    <div class="box7_guide"><h1 id="moderkort">Steg Fem - Montera moderkortet</h1>
+
+    <p>
+        Nu är det dags att montera moderkortet i chassit. Börja med att lossa den vänstra sidan av chassit (framifrån sett). Detta
+        gör du enkelt genom att lossa ett par spärrar eller skruva loss ett par skruvar. Det bör vara ganska självförklarande
+        men om du är osäker så finns det oftast beskrivet i manualen för ditt chassi. Vi rekommenderar att du lossar båda sidorna
+        på chassit om du vill göra en snygg kabeldragning
+    </p>
+    <p>
+        Se till att du har monterat distanser i chassit (de är oftast guldfärgade skruvar som ingår med chassit) så att moderkortet
+        kommer upp från plåten och inte kortsluts. I många chassin är hålen där distanserna ska monteras redan utmärkta med "ATX",
+        "M-ATX", osv. Om du är osäker på hur distanserna ska monteras står detta i manualen för ditt chassi och du kan lägga
+        moderkortet i chassit för att se hur du ska montera distanserna. Tänk på att endast montera distanser så att de stämmer
+        överens med hålen i morderkortet då för många distanser eller distanser på fel ställen kan orsaka kortslutning. Innan
+        du installerar moderkortet ska du montera I/O-plåten i den bakre delen av chassit. Den är enkel att hitta då den ingår
+        med ditt moderkort och hålen i denna plåt matchar de portar som finns bak på ditt moderkort. Plåten kläms på plats och
+        är enkel att ta loss om du skulle råka vända den åt fel håll. Sätt sedan ner moderkortet på distanserna så att I/O-plåten
+        inte blockerar några portar. Skruva sedan fast moderkortet i chassit.
+    </p>
+    <p>
+        I vissa fall kan det vara enklare att montera nätaggregatet innan du monterar moderkortet. Vilket alternativ som är bäst
+        beror på chassits konstruktion och hur mycket plats det finns. Så innan du skruvar fast moderkortet; titta hur nätaggregatet
+        är monterat och värdera om det är enklare att först montera nätaggregatet. I de flesta fall är det enklare att montera
+        nätaggregatet före moderkortet i de chassin där nätaggregatet skall monteras i toppen av chassit. Om det är enklare att
+        installera nätaggregatet först klicka här.
+    </p></div> 
+    
+    <div class="box8_guide"><img src="images/mb_standoffs.png" alt=""></div> 
+
+    <div class="box9_guide"><h1 id="chassikontaker">Steg Sex - Anslut chassikontakterna</h1>
+    <p>I chassit har du nu en del kablar som behöver anslutas till moderkortet. Dessa kablar ansluter bland annat USB-portar, fläktar,
+        ljudkontakter, lysdioder och strömbrytare med mera. I manualen för ditt moderkort står det precis var alla kontakter
+        ska anslutas.
+    </p>
+
+    <p>
+        Notera att du kan montera kontakterna för lysdioder ("LED"), strömbrytare och resetknapp åt olika håll utan att något tar
+        skada men att det kanske inte fungerar. För att undvika onödigt huvudbry så benämns de färgade kablarna till varje kontakt
+        som "+" i manualen för moderkortet och när man vet detta så bör det göra monteringen enklare.
+    </p>
+
+    <p>I ditt chassi bör du hitta följande kontakter:</p>
+
+    <ul>
+        <li>Kabel till USB-portarna i fronten på chassit. (Dessa är kvadratiska och saknar ett anslutningshål i kontakten.)</li>
+        <li>Resetknappen (RST_SW)</li>
+        <li>Strömbrytaren (PWR_SW)</li>
+        <li>Lysdioder för ström och hårddiskaktivitet. (HDD_LED &amp; PWR_LED)</li>
+        <li>Kontakten för eSATA som ansluts till valfri SATA-port på moderkortet. (Försök att undvika port 1 och 2 då dessa bör användas
+            för hårddisk och optisk läsare)</li>
+        <li>Kontakterna för ljud ska anslutas till de interna ljudkontakterna. I majoriteten av fallen vill du använda kontakten
+            som är märkt med "HD _AUDIO" om du har flera alternativ.</li>
+        <li>Fläktarna kan anslutas till valfri fläktkontakt på moderkortet eller till nätaggregatet om adapter medföljer till detta.
+        </li>
+    </ul></div> 
+
+    <div class="box10_guide"><h1 id="hårddisk">Steg Sju - Montera hårddisken</h1>
+    <p>
+        Hårdisken monteras oftast i “hyllor” där dem enkelt kan “hot-swapas” bland annat. Detta steg handlar endast om hårddisken.
+        Hur den ska monteras skiljer sig markant från chassi till chassi så vår rekommendation är att du läser i manualen för
+        att se hur det fungerar för just ditt chassi. Har du en SSD-disk (som fysiskt är mindre än en vanlig mekanisk disk) kan
+        det vara så att du behöver köpa en adapter för att kunna montera den i chassit. Dessa adaptrar medföljer ofta chassi
+        eller SSD-disk men gör den inte det kostar dessa bara några tior.
+    </p>
+    <p>
+        Hårddisken ansluts sedan till moderkortet med en SATA-kabel. Använd nu SATA-port nr 1 på moderkortet.
+    </p></div> 
+
+    <div class="box11_guide"><h1 id="grafikkort">Steg Åtta - Installera grafikkortet</h1>
+    <p>
+        Beroendepå ditt val av moderkort så kan detta steg vara helt överflödigt. Om du inte värdesätter spelande så kanske du har
+        valt ett moderkort och/eller processor med integrerat grafikchip. Detta steg är till för de som ska installera ett separat
+        grafikkort.
+    </p>
+    <p>
+        Grafikkortet ansluter du till en PCI-express -port på moderkortet. Om ditt moderkort har flera PCI-express -portar ska grafikkortet
+        anslutas till den port som i manualen för moderkortet specificeras som port 1/buss 1. Oftast är detta den port som är
+        närmast processorn.
+    </p>
+    <p>
+        På baksidan av ditt chassi finns ett antal expansionsportar. Som standard är dessa täckta av små, löstagbara plåtar. Dessa
+        sitter normalt sett fast med skruvar eller någon typ av snabbfäste. Lossa så många plåtar som behövs för att ditt grafikkort
+        ska få plats och ta sedan bort dem. Vi rekommenderar att du sparar dessa tillsammans med överblivna kablar och kontakter
+        ifall de skulle behövas vid ett senare tillfälle.
+    </p>
+    <p>
+        När täckplåtarna är borta så för du grafikkortet på plats i PCI-express -porten och passar in baksidan på kortet (där DVI,
+        VGA, HDMI-portarna sitter) där täckplåtarna satt tidigare. När kortet är på plats fäster du det med skruvarna eller snabbfästet
+        som höll täckplåtarna på plats.
+    </p></div> 
+
+    <div class="box12_guide"><h1 id="nätaggregat">Steg Nio - Installera nätaggregatet</h1>
+
+    <p>
+        Nu har vi bara tre steg kvar och steg tio handlar om nätaggregatet. Vissa chassin har nätaggregatet monterat redan vid leverans.
+        Om så inte är fallet så får du själv välja vilket nätaggregat du ska köpa och det är det vi baserar guiden på. Det är
+        viktigt att se till så att du har ett tillräckligt starkt nätaggregat för att driva komponenterna därför kan du använda
+        denna tjänst https://outervision.com/power-supply-calculator
+
+    </p>
+    <p>
+        När du bygger din dator så finns det förutom olika Watt-styrkor, två olika sorters nätaggregat som du kan välja mellan. Dessa
+        är nätaggregat med modulära och icke modulära kabellösningar. De "modulära" nätaggregaten har en lösning där du kan anpassa
+        vilka kablar som du ansluter till ditt nätaggregat. Har du exempelvis många hårddiskar så kan du ansluta fler kablar
+        som ger SATA-ström. Har du strömhungriga grafikkort kan du istället ansluta kablar som ger flera strömkontakter för PCI-express
+        -grafikkort. Du har då större möjligheter att anpassa strömkablarna i datorn efter just ditt behov och kan då undvika
+        kabelhärvor som bromsar luftflödet och som gör det svårare att byta komponenter i din dator. Om du har ett modulärt nätaggregat
+        och undrar hur kablarna ska kopplas, ta då en titt i manualen för nätaggregatet så ska du se att alla frågetecken rätas
+        ut.
+
+    </p>
+    <p>
+        I de allra flesta fall finns det bara ett ställe du kan montera nätaggregatet på. Vissa speciella chassin erbjuder olika
+        platser men oftast är det bara en plats, uppe eller nere i bakre delen av chassit. Nätaggregatet fästs sedan med fyra
+        skruvar.
+
+    </p>
+    <p>
+        Efter skruvandet är det dags att ansluta alla komponenter i datorn till nätaggregatet. Du bör ansluta de olika komponenterna
+        i följande ordning:
+    </p>
+    <p></p>
+    <ul>
+        <li>
+            Den stora 24-pins kontakten på moderkortet
+        </li>
+        <li>
+            Beroende på moderkort och nätaggregat så finns det en 4 eller 8-pin kontakt på moderkortet som ska anslutas till en kontakt
+            som sitter nära processorsockeln.
+        </li>
+        <li>
+            Grafikkortet ska oftast ha en 6 eller 8-pin PCI-express strömkontakt. Vissa mer kraftfulla grafikkort behöver en av varje
+            eller två 6-pin. Enklare grafikkort behöver ingen extra ström alls.
+        </li>
+        <li>
+            Hårddiskar och optiska enheter får ström från SATA-strömkontakterna.
+        </li>
+        <li>
+            Extra chassifläktar som du inte anslutit direkt till moderkortet ska anslutas till nätaggregatets molexkontakter.
+        </li>
+    </ul></div> 
+
+    <div class="box13_guide"><h1 id="expansionskort">Steg Tio - Expansionskort</h1>
+    <p>
+        Det här steget är för dig som valt extra expansionskort såsom nätverkskort, ljudkort, med mera. Vanligtvis ansluts korten
+        via PCI eller PCI-express. Det är rätt enkelt att montera, leta upp en port på moderkortet där ditt expansionskort passar
+        och installera det där efter samma procedur som med grafikkortet i steg nio. Ta bort täckplåten, tryck ner kortet och
+        skruva fast det. Har du flera portar där du kan montera kortet så kan du själv välja vart du sätter det.
+    </p></div> 
+
+    <div class="box14_guide"><h1 id="kabeldragning">Steg Elva - Kabeldragning</h1>
+    <p>
+        Sist men inte minst så vill du se till att alla kablar är snyggt dragna och fastsatta. Detta för att minska risken att några
+        kablar lossnar eller hindrar luftflödet. Dessutom blir det enklare att byta ut komponenter i datorn om det inte ser ut
+        som punghår.
+    </p>
+    <p>
+        I många fall ingår det buntband tillsammans med ditt chassi, annars kan du köpa detta löst. När alla kablar är snyggt dragna
+        så är det bara att skruva på chassinidorna och du är klar.
+
+    </p>
+    <p>
+        Om detta var din första dator som du själv byggt så är ett GRATTIS på sin plats! Allt du behöver göra nu är att ansluta skärm,
+        tangentbord, mus samt ansluta strömkabeln till vägguttaget och sätta igång datorn. Sätt in installationsskivan för ditt
+        operativsystem och påbörja installationen.
+
+    </p></div> 
+
+</div>
 
 
-<h1 id="processorkylare">Steg Fyra - Montera processorkylaren</h1>
-<p>
-    Nu när processorn är monterad i sockeln är det dags att montera processorkylaren. Exakt hur den ska monteras kan variera
-    från modell till modell, men det finns tydligt beskrivet i manualen för kylaren (eller processorn om du använder den
-    medföljande processorkylaren). Vid installation av tredjepartskylare så följ manualen för din specifika processorkylare.
-</p>
-<p>
-    Vi tänker i denna guide förutse att vi använder oss utav en kylare som medföljer processorn. Först av allt så är det viktigt
-    att det finns ett tunt, tunt lager av kylpasta mellan processorn och processorkylaren. Man brukar annars säga att ungefär
-    en ärta av kylpasta räcker för dem flesta processorerna.
-</p>
-<p>
-    Själva kylaren har fyra ben. Sätt försiktigt kylaren över sockeln så att benen matchar med hålen i moderkortet åt rätt håll.
-    Tryck sedan ner kylaren mot moderkortet så att hullingarna på benens ändar fäster på baksidan av moderkortet. Kontrollera
-    så alla hullingar har gått igenom hålen och tryck sedan ner de svarta plastbitarna i toppen av varje ben så att kylarens
-    ben fixeras i hålen. Anslut sedan strömkabeln från processorkylaren till avsedd kontakt på moderkortet. Vilken kontakt
-    det är står angivet i manualen för moderkortet men oftast sitter kontakten nära processorsockeln och benämns "CPU_FAN".
-    När du är klar med steg fyra så är det dags att montera moderkortet i chassit.
-</p>
+<footer class="copyright">Copyright &copy; My Documents, 2017 </footer>
 
-<h1 id="moderkort">Steg Fem - Montera moderkortet</h1>
-
-<p>
-    Nu är det dags att montera moderkortet i chassit. Börja med att lossa den vänstra sidan av chassit (framifrån sett). Detta
-    gör du enkelt genom att lossa ett par spärrar eller skruva loss ett par skruvar. Det bör vara ganska självförklarande
-    men om du är osäker så finns det oftast beskrivet i manualen för ditt chassi. Vi rekommenderar att du lossar båda sidorna
-    på chassit om du vill göra en snygg kabeldragning
-</p>
-<p>
-    Se till att du har monterat distanser i chassit (de är oftast guldfärgade skruvar som ingår med chassit) så att moderkortet
-    kommer upp från plåten och inte kortsluts. I många chassin är hålen där distanserna ska monteras redan utmärkta med "ATX",
-    "M-ATX", osv. Om du är osäker på hur distanserna ska monteras står detta i manualen för ditt chassi och du kan lägga
-    moderkortet i chassit för att se hur du ska montera distanserna. Tänk på att endast montera distanser så att de stämmer
-    överens med hålen i morderkortet då för många distanser eller distanser på fel ställen kan orsaka kortslutning. Innan
-    du installerar moderkortet ska du montera I/O-plåten i den bakre delen av chassit. Den är enkel att hitta då den ingår
-    med ditt moderkort och hålen i denna plåt matchar de portar som finns bak på ditt moderkort. Plåten kläms på plats och
-    är enkel att ta loss om du skulle råka vända den åt fel håll. Sätt sedan ner moderkortet på distanserna så att I/O-plåten
-    inte blockerar några portar. Skruva sedan fast moderkortet i chassit.
-</p>
-<p>
-    I vissa fall kan det vara enklare att montera nätaggregatet innan du monterar moderkortet. Vilket alternativ som är bäst
-    beror på chassits konstruktion och hur mycket plats det finns. Så innan du skruvar fast moderkortet; titta hur nätaggregatet
-    är monterat och värdera om det är enklare att först montera nätaggregatet. I de flesta fall är det enklare att montera
-    nätaggregatet före moderkortet i de chassin där nätaggregatet skall monteras i toppen av chassit. Om det är enklare att
-    installera nätaggregatet först klicka här.
-</p>
-
-
-<h1 id="chassikontaker">Steg Sex - Anslut chassikontakterna</h1>
-<p>I chassit har du nu en del kablar som behöver anslutas till moderkortet. Dessa kablar ansluter bland annat USB-portar, fläktar,
-    ljudkontakter, lysdioder och strömbrytare med mera. I manualen för ditt moderkort står det precis var alla kontakter
-    ska anslutas.
-</p>
-
-<p>
-    Notera att du kan montera kontakterna för lysdioder ("LED"), strömbrytare och resetknapp åt olika håll utan att något tar
-    skada men att det kanske inte fungerar. För att undvika onödigt huvudbry så benämns de färgade kablarna till varje kontakt
-    som "+" i manualen för moderkortet och när man vet detta så bör det göra monteringen enklare.
-</p>
-
-<p>I ditt chassi bör du hitta följande kontakter:</p>
-
-<ul>
-    <li>Kabel till USB-portarna i fronten på chassit. (Dessa är kvadratiska och saknar ett anslutningshål i kontakten.)</li>
-    <li>Resetknappen (RST_SW)</li>
-    <li>Strömbrytaren (PWR_SW)</li>
-    <li>Lysdioder för ström och hårddiskaktivitet. (HDD_LED &amp; PWR_LED)</li>
-    <li>Kontakten för eSATA som ansluts till valfri SATA-port på moderkortet. (Försök att undvika port 1 och 2 då dessa bör användas
-        för hårddisk och optisk läsare)</li>
-    <li>Kontakterna för ljud ska anslutas till de interna ljudkontakterna. I majoriteten av fallen vill du använda kontakten
-        som är märkt med "HD _AUDIO" om du har flera alternativ.</li>
-    <li>Fläktarna kan anslutas till valfri fläktkontakt på moderkortet eller till nätaggregatet om adapter medföljer till detta.
-    </li>
-</ul>
-
-<h1 id="hårddisk">Steg Åtta - Montera hårddisken</h1>
-<p>
-    Hårdisken monteras oftast i “hyllor” där dem enkelt kan “hot-swapas” bland annat. Detta steg handlar endast om hårddisken.
-    Hur den ska monteras skiljer sig markant från chassi till chassi så vår rekommendation är att du läser i manualen för
-    att se hur det fungerar för just ditt chassi. Har du en SSD-disk (som fysiskt är mindre än en vanlig mekanisk disk) kan
-    det vara så att du behöver köpa en adapter för att kunna montera den i chassit. Dessa adaptrar medföljer ofta chassi
-    eller SSD-disk men gör den inte det kostar dessa bara några tior.
-</p>
-<p>
-    Hårddisken ansluts sedan till moderkortet med en SATA-kabel. Använd nu SATA-port nr 1 på moderkortet.
-</p>
-
-<h1 id="grafikkort">Steg Nio - Installera grafikkortet</h1>
-<p>
-    Beroendepå ditt val av moderkort så kan detta steg vara helt överflödigt. Om du inte värdesätter spelande så kanske du har
-    valt ett moderkort och/eller processor med integrerat grafikchip. Detta steg är till för de som ska installera ett separat
-    grafikkort.
-</p>
-<p>
-    Grafikkortet ansluter du till en PCI-express -port på moderkortet. Om ditt moderkort har flera PCI-express -portar ska grafikkortet
-    anslutas till den port som i manualen för moderkortet specificeras som port 1/buss 1. Oftast är detta den port som är
-    närmast processorn.
-</p>
-<p>
-    På baksidan av ditt chassi finns ett antal expansionsportar. Som standard är dessa täckta av små, löstagbara plåtar. Dessa
-    sitter normalt sett fast med skruvar eller någon typ av snabbfäste. Lossa så många plåtar som behövs för att ditt grafikkort
-    ska få plats och ta sedan bort dem. Vi rekommenderar att du sparar dessa tillsammans med överblivna kablar och kontakter
-    ifall de skulle behövas vid ett senare tillfälle.
-</p>
-<p>
-    När täckplåtarna är borta så för du grafikkortet på plats i PCI-express -porten och passar in baksidan på kortet (där DVI,
-    VGA, HDMI-portarna sitter) där täckplåtarna satt tidigare. När kortet är på plats fäster du det med skruvarna eller snabbfästet
-    som höll täckplåtarna på plats.
-</p>
-<h1 id="nätaggregat">Steg Tio - Installera nätaggregatet</h1>
-<p>
-    Nu har vi bara tre steg kvar och steg tio handlar om nätaggregatet. Vissa chassin har nätaggregatet monterat redan vid leverans.
-    Om så inte är fallet så får du själv välja vilket nätaggregat du ska köpa och det är det vi baserar guiden på. Det är
-    viktigt att se till så att du har ett tillräckligt starkt nätaggregat för att driva komponenterna därför kan du använda
-    denna tjänst https://outervision.com/power-supply-calculator
-
-</p>
-<p>
-    När du bygger din dator så finns det förutom olika Watt-styrkor, två olika sorters nätaggregat som du kan välja mellan. Dessa
-    är nätaggregat med modulära och icke modulära kabellösningar. De "modulära" nätaggregaten har en lösning där du kan anpassa
-    vilka kablar som du ansluter till ditt nätaggregat. Har du exempelvis många hårddiskar så kan du ansluta fler kablar
-    som ger SATA-ström. Har du strömhungriga grafikkort kan du istället ansluta kablar som ger flera strömkontakter för PCI-express
-    -grafikkort. Du har då större möjligheter att anpassa strömkablarna i datorn efter just ditt behov och kan då undvika
-    kabelhärvor som bromsar luftflödet och som gör det svårare att byta komponenter i din dator. Om du har ett modulärt nätaggregat
-    och undrar hur kablarna ska kopplas, ta då en titt i manualen för nätaggregatet så ska du se att alla frågetecken rätas
-    ut.
-
-</p>
-<p>
-    I de allra flesta fall finns det bara ett ställe du kan montera nätaggregatet på. Vissa speciella chassin erbjuder olika
-    platser men oftast är det bara en plats, uppe eller nere i bakre delen av chassit. Nätaggregatet fästs sedan med fyra
-    skruvar.
-
-</p>
-<p>
-    Efter skruvandet är det dags att ansluta alla komponenter i datorn till nätaggregatet. Du bör ansluta de olika komponenterna
-    i följande ordning:
-</p>
-<p></p>
-<ul>
-    <li>
-        Den stora 24-pins kontakten på moderkortet
-    </li>
-    <li>
-        Beroende på moderkort och nätaggregat så finns det en 4 eller 8-pin kontakt på moderkortet som ska anslutas till en kontakt
-        som sitter nära processorsockeln.
-    </li>
-    <li>
-        Grafikkortet ska oftast ha en 6 eller 8-pin PCI-express strömkontakt. Vissa mer kraftfulla grafikkort behöver en av varje
-        eller två 6-pin. Enklare grafikkort behöver ingen extra ström alls.
-    </li>
-    <li>
-        Hårddiskar och optiska enheter får ström från SATA-strömkontakterna.
-    </li>
-    <li>
-        Extra chassifläktar som du inte anslutit direkt till moderkortet ska anslutas till nätaggregatets molexkontakter.
-    </li>
-</ul>
-
-<h1 id="expansionskort">Steg Elva - Expansionskort</h1>
-<p>
-    Det här steget är för dig som valt extra expansionskort såsom nätverkskort, ljudkort, med mera. Vanligtvis ansluts korten
-    via PCI eller PCI-express. Det är rätt enkelt att montera, leta upp en port på moderkortet där ditt expansionskort passar
-    och installera det där efter samma procedur som med grafikkortet i steg nio. Ta bort täckplåten, tryck ner kortet och
-    skruva fast det. Har du flera portar där du kan montera kortet så kan du själv välja vart du sätter det.
-</p>
-<h1 id="kabeldragning">Steg Tolv - Kabeldragning</h1>
-<p>
-    Sist men inte minst så vill du se till att alla kablar är snyggt dragna och fastsatta. Detta för att minska risken att några
-    kablar lossnar eller hindrar luftflödet. Dessutom blir det enklare att byta ut komponenter i datorn om det inte ser ut
-    som punghår.
-</p>
-<p>
-    I många fall ingår det buntband tillsammans med ditt chassi, annars kan du köpa detta löst. När alla kablar är snyggt dragna
-    så är det bara att skruva på chassinidorna och du är klar.
-
-</p>
-<p>
-    Om detta var din första dator som du själv byggt så är ett GRATTIS på sin plats! Allt du behöver göra nu är att ansluta skärm,
-    tangentbord, mus samt ansluta strömkabeln till vägguttaget och sätta igång datorn. Sätt in installationsskivan för ditt
-    operativsystem och påbörja installationen.
-
-</p>
 <script>
         window.onscroll = function () {
             scrollFunction()
@@ -342,9 +356,5 @@ på det senare.
             document.documentElement.scrollTop = 0;
         }
     </script>
-
-
-<footer class="copyright">Copyright &copy; My Documents, 2017 </footer>
-
 
 </html>
