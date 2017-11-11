@@ -202,6 +202,9 @@ body {
   .grid_hemsida {
     grid-template-columns: 100%;
     grid-template-areas: 'box1' 'box2'; }
+  .grid_guide {
+    grid-template-columns: 100%;
+    grid-template-areas: 'box1' 'box2' 'box3' 'box4' 'box5' 'box6' 'box7' 'box8' 'box9' 'box10' 'box11' 'box12' 'box13' 'box14'; }
   .navbar {
     height: 6vw; }
   .navlink {
