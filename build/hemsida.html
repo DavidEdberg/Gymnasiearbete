@@ -34,8 +34,8 @@
 
     <ul class="navbar">
         <li class="navlink"><a href="hemsida.html">Hemsida</a></li>
-        <li class="navlink"><a href="guide.html" onclick="toggleDropDown()">Guide</a>
-            <div class="dropdown-content">
+        <li class="navlink"><a href="guide.html">Guide</a>
+            <div id="dropdown-content" class="dropdown-content">
             <a href="guide.html#komponenter">Komponenter</a>
             <a href="guide.html#processor">Processorn</a>
             <a href="guide.html#ram">Internminne</a>
@@ -56,11 +56,11 @@
 
     <div class="grid">
         <div class="box1">
-            Våra guider är speciellt framtagen för dig som alltid velat bygga sin egen dator men aldrig riktigt vågat ta det första
-            steget. Denna hemsida täcker i stort sett allt du behöver veta innan du sätter igång och bygger din egen dator.
+            Våran guide är speciellt framtagen för dig som alltid velat bygga sin egen dator men aldrig riktigt vågat ta det första
+            steget. Denna webbsida täcker i stort sett allt du behöver veta innan du sätter igång och bygger din egen dator.
         <p>En stor fördel med att bygga sin egen dator är det breda utbudet av komponenter som finns samt möjligheten att anpassa
             och uppgradera datorn efter egna önskemål. Du kan välja ut de komponenter du själv önskar för att få en dator vars
-            prestanda är anpassad efter dina behov, utan att betala extra för onödiga tillbehör eller prestanda du inte behöver
+            prestanda är anpassad efter dina behov, utan att betala extra för onödiga tillbehör eller prestanda som du inte behöver
         </p>
         <p>Alla vill få ut olika saker från sin dator. Om du har mycket film, musik och bilder behöver du ordentligt med hårddiskutrymme,
             spelintresserade vill ha kraftfulla grafikkort, sysslar du mycket med foto och video vill du ha mycket internminne
@@ -73,16 +73,6 @@
 
         <div class="box2">box 2</div>
     </div>
-
-    <script>
-    function toggleDropDown() {
-        var x = document.getElementById("dropdown-content").style.maxWidth = "700px";
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }</script>
 
     <footer class="copyright">Copyright &copy; My Document, 2017 </footer>
 </body>
