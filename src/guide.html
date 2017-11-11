@@ -35,24 +35,25 @@
 
 <ul class="navbar">
     <li class="navlink"><a href="hemsida.html">Hemsida</a></li>
-    <li class="navlink"><a href="guide.html">Guide</a>
-        <div class="dropdown-content">
-        <a href="guide.html#komponenter">Komponenter</a>
-        <a href="guide.html#processor">Processorn</a>
-        <a href="guide.html#ram">Internminne</a>
-        <a href="guide.html#processorkylare">Processorkylare</a>
-        <a href="guide.html#chassikontakter">Chassikontakter</a>
-        <a href="guide.html#hårddisk">Hårddisk</a>
-        <a href="guide.html#grafikkort">Grafikkort</a>
-        <a href="guide.html#nätaggregat">Nätaggregat</a>
-        <a href="guide.html#expansionskort">Expansionskort</a>
-        <a href="guide.html#kabeldragning">Kabeldragning</a>
-        </div>  
-
-    </li>
+    <li class="navlink" style="color:white">Guide
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="guide.html#förord">Förord</a>
+                <a href="guide.html#komponenter">Komponenter</a>
+                <a href="guide.html#processor">Processorn</a>
+                <a href="guide.html#ram">Internminne</a>
+                <a href="guide.html#processorkylare">Processorkylare</a>
+                <a href="guide.html#chassikontakter">Chassikontakter</a>
+                <a href="guide.html#hårddisk">Hårddisk</a>
+                <a href="guide.html#grafikkort">Grafikkort</a>
+                <a href="guide.html#nätaggregat">Nätaggregat</a>
+                <a href="guide.html#expansionskort">Expansionskort</a>
+                <a href="guide.html#kabeldragning">Kabeldragning</a>
+            </div>
+        </li>
     <li class="navlink"><a href="om_oss.html">Om Oss</a></li>
     <li class="navlink"><a href="kontakt.html">Kontakt</a></li>
 </ul>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Tillbaks till toppen</button>
 
 <h1 id="förord">Förord</h1>
 När man beställer datordelar är det viktigaste att alla delar är kompatibla med varandra så inga problem uppstår. Det går
@@ -138,7 +139,6 @@ på det senare.
     du vänt minnet åt rätt håll så att du inte skadar minnesmodulen eller sockeln.
 </p>
 
-<img src="images/insert_ram.png" alt="">
 
 <h1 id="processorkylare">Steg Fyra - Montera processorkylaren</h1>
 <p>
@@ -186,7 +186,7 @@ på det senare.
     nätaggregatet före moderkortet i de chassin där nätaggregatet skall monteras i toppen av chassit. Om det är enklare att
     installera nätaggregatet först klicka här.
 </p>
-<img src="images/mb_standoffs.png" alt="">
+
 
 <h1 id="chassikontaker">Steg Sex - Anslut chassikontakterna</h1>
 <p>I chassit har du nu en del kablar som behöver anslutas till moderkortet. Dessa kablar ansluter bland annat USB-portar, fläktar,
@@ -323,13 +323,25 @@ på det senare.
     operativsystem och påbörja installationen.
 
 </p>
+<script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
 
 
-
-
-
-
-
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 <footer class="copyright">Copyright &copy; My Documents, 2017 </footer>

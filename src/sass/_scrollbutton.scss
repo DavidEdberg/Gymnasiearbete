@@ -1,0 +1,19 @@
+#myBtn {
+  bottom: 20px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  display: none;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: $logga_background;
+  padding: 15px;
+  position: fixed;
+  z-index: 99;
+}
+
+#myBtn:hover {
+  background-color: $navbar_hover;
+}
