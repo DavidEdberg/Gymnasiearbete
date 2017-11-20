@@ -1,0 +1,64 @@
+#mainform{
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    }
+
+    #form{
+        border-radius:2px;
+        font-size:14px;
+        font-weight:bold;
+        width: 100%;
+        
+    }
+
+    h3{
+        text-align:center;
+        font-size:1rem;
+        }
+
+    input{
+        width:100%;
+        height:35px;
+        margin-top:5px;
+        border:1px solid #999;
+        border-radius:3px;
+        padding:5px;
+        }
+
+    input[type=button]{
+        background-color:$logga_background;
+        border:1px solid white;
+        font-family: sans-serif;
+        font-Weight:bold;
+        font-size:18px;
+        color:white;
+    
+        &:hover {
+            background-color: $navbar_hover;
+        }
+    }
+
+    textarea{
+        width:100%;
+        height:80px;
+        margin-top:5px;
+        border-radius:3px;
+        padding:5px;
+        resize:none;
+    }
+
+    span{
+    color:red
+    }
+
+    #note{
+    color:black;
+    font-Weight:400;
+    }
+
+    #returnmessage{
+    font-size:14px;
+    color:green;
+    text-align:center;
+    }
