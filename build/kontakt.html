@@ -7,8 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <title>Document</title>
+=======
+    <title>My Documents</title>
+>>>>>>> 40fe8620262a93a229d84bbf793fa18d69ba52f0
 </head>
 
 <body>
@@ -59,23 +63,48 @@
         <li class="navlink"><a href="kontakt.html">Kontakt</a></li>
     </ul>
 
-    <form action="form.php" method="post">
-        <label for="fornamn">Förnamn</label>
-        <input type="text" name="fornamn" id="fornamn">
-<br>
-        <label for="efternamn">Efternamn</label>
-        <input type="text" name="efternamn" id="efternamn">
-<br>
-        <label for="email">E-postadress</label>
-        <input type="email" name="email" id="email">
-<br>
-        <label for="meddelande">Ditt meddelande</label>
-        <input type="text" name="meddelande" id="meddelande">
-<br>
-        <button type="submit"><a href="form.php">Skicka</a></button>
-    </form>
+<div class="grid_hemsida">
+    <div class="box1_hemsida">
+        Våran guide är speciellt framtagen för dig som alltid velat bygga sin egen dator men aldrig riktigt vågat ta det första steget.
+        Denna webbsida täcker i stort sett allt du behöver veta innan du sätter igång och bygger din egen dator.
+        <p>En stor fördel med att bygga sin egen dator är det breda utbudet av komponenter som finns samt möjligheten att
+            anpassa och uppgradera datorn efter egna önskemål. Du kan välja ut de komponenter du själv önskar för att
+            få en dator vars prestanda är anpassad efter dina behov, utan att betala extra för onödiga tillbehör eller
+            prestanda som du inte behöver
+        </p>
+        <p>Alla vill få ut olika saker från sin dator. Om du har mycket film, musik och bilder behöver du ordentligt med
+            hårddiskutrymme, spelintresserade vill ha kraftfulla grafikkort, sysslar du mycket med foto och video vill
+            du ha mycket internminne och en processor med flera kärnor. Vissa vill ha en av dessa medans andra vill ha
+            alla delarna. Du behöver inte köpa en otroligt kraftfull dator som är bra på allt när du kan bygga en egen
+            dator som levererar den prestanda som du behöver, till en mindre peng.
+        </p>
 
+    </div>
+    
+<div class="box2_hemsida">
+    <div id="mainform">
+            <form id="form">
+            <h3>Kontaktform</h3>
+            <p id="returnmessage"></p>
+            <label>Name: <span>*</span></label>
+            <input type="text" id="name" placeholder="Name"/>
+            <label>Email: <span>*</span></label>
+            <input type="text" id="email" placeholder="Email"/>
+            <label>Contact No: <span>*</span></label>
+            <input type="text" id="contact" placeholder="10 digit Mobile no."/>
+            <label>Meddelande:</label>
+            <textarea id="message" placeholder="Meddelande......."></textarea>
+            <input type="button" id="submit" value="Send Message"/>
+            </form>
+            </div>
+    
+
+    </div>
+</div>
+
+ 
     <footer class="copyright">Copyright &copy; My Document, 2017 </footer>
+
 </body>
 
 </html>
