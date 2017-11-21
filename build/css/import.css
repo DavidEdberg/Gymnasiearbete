@@ -204,13 +204,13 @@ body {
 
 #form {
   border-radius: 2px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 1.4vw;
   width: 100%; }
 
 h3 {
   text-align: center;
-  font-size: 1rem; }
+  font-size: 2vw;
+  margin: 0; }
 
 input {
   width: 100%;
@@ -225,7 +225,7 @@ input[type=button] {
   border: 1px solid white;
   font-family: sans-serif;
   font-Weight: bold;
-  font-size: 18px;
+  font-size: 1.4vw;
   color: white; }
   input[type=button]:hover {
     background-color: #507b77; }
@@ -246,7 +246,7 @@ span {
   font-Weight: 400; }
 
 #returnmessage {
-  font-size: 14px;
+  font-size: 1.4vw;
   color: green;
   text-align: center; }
 
