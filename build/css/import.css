@@ -189,6 +189,7 @@ body {
   display: none;
   right: 30px;
   height: 4vw;
+  line-height: 2vw;
   background-color: #283d3b;
   padding: 15px;
   position: fixed;
@@ -268,7 +269,9 @@ span {
     width: 100%;
     left: 0%;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(1, 100%); } }
+    grid-template-rows: repeat(1, 100%); }
+  #myBtn {
+    font-size: 5vw; } }
 
 @media only screen and (max-width: 400px) {
   .box {
