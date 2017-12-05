@@ -254,6 +254,8 @@ span {
 @media only screen and (max-width: 700px) {
   html {
     font-size: 3vw; }
+  h3 {
+    font-size: 4vw; }
   .grid_hemsida {
     grid-template-columns: 100%;
     grid-template-areas: 'box1' 'box2'; }
