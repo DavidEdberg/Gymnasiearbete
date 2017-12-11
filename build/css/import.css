@@ -284,7 +284,7 @@ span {
     grid-template-rows: repeat(1, 100%); }
   #myBtn {
     font-size: 3vw;
-    line-height: 50%; } }
+    line-height: 30%; } }
 
 @media only screen and (max-width: 400px) {
   .box {
